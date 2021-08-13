@@ -1,5 +1,6 @@
 li a {
-    color: green;
+    color: lawngreen;
+    font-weight: bold;
 }
 body {
     background: white url("images/background.gif") no-repeat;
