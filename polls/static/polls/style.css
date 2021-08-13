@@ -1,7 +1,40 @@
-li a {
-    color: lawngreen;
-    font-weight: bold;
-}
 body {
-    background: white url("images/background.gif") no-repeat;
+  background: black;
+}
+.main {
+  margin: auto;
+  background: black url("images/background.gif") no-repeat;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+ul {
+  margin: auto;
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: white; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+li a {
+    font-style: oblique;
+  font-size: 24px;
+  color: rgb(75, 134, 16);
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+li {
+  margin: 16px;
+  line-height: 2em;
 }
